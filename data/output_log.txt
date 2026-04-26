@@ -1,0 +1,3 @@
+Processing 1024 x 1024 Matrix Multiplication...
+
+Matrix too large to print. Success.
