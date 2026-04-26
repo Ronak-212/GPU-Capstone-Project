@@ -1,12 +1,15 @@
-# GPU-Accelerated Matrix Transformer
-This project utilizes the NVIDIA cuBLAS library to perform high-performance matrix-matrix multiplication on large data sets.
+# GPU-Accelerated Matrix Transformation Engine
 
-### How to Run
-1. **Compile**: `make`
-2. **Execute**: `./matrix_transformer [size]`
-   - Example: `./matrix_transformer 1024`
+## Overview
+This project uses NVIDIA cuBLAS to perform optimized matrix multiplications. It is designed to demonstrate high-performance computing (HPC) capabilities.
 
-### Project Details
-- **Hardware**: NVIDIA Tesla/A100 (via Coursera Labs)
-- **Library**: cuBLAS v2
-- **Goal**: Demonstrate efficient host-to-device data transfer and GPU kernel execution for VLSI-scale calculations.
+## Repository Contents
+- **/src/main.cu**: Core CUDA source code.
+- **Makefile**: Professional build script for nvcc.
+- **run.sh**: Automation script for multi-size testing.
+- **/data/output_log.txt**: Proof of successful execution on various datasets.
+
+## How to Build and Run
+1. **Compile**: Type `make` in the terminal.
+2. **Automated Test**: Type `./run.sh` to see the code run on Small, Medium, and Large matrices.
+3. **Manual Run**: `./bin/matrix_transformer <size>` (e.g., `./bin/matrix_transformer 1024`).
